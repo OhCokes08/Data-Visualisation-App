@@ -29,5 +29,5 @@ st.subheader(f"{xaxis} and {yaxis}")
 
 
 
-figure = px.scatter(x=xarray, y=yarray, labels={"x":xaxis, "y":yaxis})
+figure = px.scatter(df, x=xarray, y=yarray, labels={"x":xaxis, "y":yaxis})
 st.plotly_chart(figure)
